@@ -1,86 +1,122 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dmitrii Musikhin | Marketing Specialist & Data Analyst</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+    </style>
 </head>
-<body class="bg-gray-50 text-gray-900 font-sans">
+<body class="bg-slate-50 text-slate-900 selection:bg-blue-200">
 
-    <header class="bg-white border-b sticky top-0 z-50">
+    <header class="bg-white/80 backdrop-blur-md border-b sticky top-0 z-50">
         <div class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
-            <h1 class="text-xl font-bold tracking-tight">DMITRII MUSIKHIN</h1>
-            <nav class="space-x-6 text-sm font-medium">
-                <a href="#projects" class="hover:text-blue-600">Projects</a>
-                <a href="#skills" class="hover:text-blue-600">Skills</a>
-                <a href="mailto:mitrimus@gmail.com" class="bg-blue-600 text-white px-4 py-2 rounded-lg">Contact Me</a>
+            <h1 class="text-xl font-extrabold tracking-tight text-slate-800">D. MUSIKHIN</h1>
+            <nav class="hidden md:flex space-x-8 text-sm font-semibold text-slate-600">
+                <a href="#projects" class="hover:text-blue-600 transition">Case Studies</a>
+                <a href="#skills" class="hover:text-blue-600 transition">Tech Stack</a>
             </nav>
+            <a href="mailto:mitrimus@gmail.com" class="bg-blue-600 hover:bg-blue-700 transition text-white px-5 py-2.5 rounded-lg text-sm font-semibold shadow-sm">
+                Get in Touch
+            </a>
         </div>
     </header>
 
-    <main class="max-w-5xl mx-auto px-6 py-16">
-        <section class="mb-20">
-            <h2 class="text-4xl font-extrabold mb-4">Bridging the gap between Data, AI, and Marketing.</h2>
-            <p class="text-xl text-gray-600 max-w-2xl">
-                I use data and AI to turn customer behavior into marketing strategies that drive results[cite: 3]. From building predictive models to OSINT research, I create personalized real-time user experiences[cite: 4, 6].
+    <main class="max-w-5xl mx-auto px-6 py-20">
+        <section class="mb-24 max-w-3xl">
+            <div class="inline-block bg-blue-100 text-blue-800 text-xs font-bold px-3 py-1 rounded-full mb-6 tracking-wide uppercase">
+                Open to Opportunities
+            </div>
+            <h2 class="text-5xl md:text-6xl font-extrabold mb-6 leading-tight tracking-tight text-slate-900">
+                Bridging the gap between <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-500">Data, AI, and Marketing.</span>
+            </h2>
+            <p class="text-xl text-slate-600 mb-8 leading-relaxed">
+                I use data and AI to turn customer behavior into marketing strategies that drive results. From building predictive models to OSINT research, I engineer personalized, real-time user experiences.
             </p>
+            <div class="flex gap-4">
+                <a href="#projects" class="bg-slate-900 hover:bg-slate-800 transition text-white px-6 py-3 rounded-lg font-semibold shadow-md">
+                    View My Work
+                </a>
+                <a href="#" target="_blank" class="bg-white hover:bg-slate-50 transition text-slate-900 border border-slate-300 px-6 py-3 rounded-lg font-semibold shadow-sm flex items-center gap-2">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                    Resume
+                </a>
+            </div>
         </section>
 
-        <section id="projects" class="mb-20">
-            <h3 class="text-2xl font-bold mb-8">Selected Case Studies</h3>
+        <section id="projects" class="mb-24">
+            <h3 class="text-3xl font-bold mb-10 tracking-tight">Selected Case Studies</h3>
             <div class="grid md:grid-cols-2 gap-8">
                 
-                <div class="bg-white p-8 rounded-2xl shadow-sm border hover:shadow-md transition">
-                    <span class="text-blue-600 text-sm font-bold uppercase">Growth & SEO</span>
-                    <h4 class="text-2xl font-bold mt-2 mb-4">Leon Mege Inc.</h4>
-                    <p class="text-gray-600 mb-6">Led SEO/AEO initiatives and improved CPA by 28% through technical restructuring and keyword cluster strategies[cite: 14, 17, 18].</p>
-                    <ul class="text-sm space-y-2 text-gray-500">
-                        <li>• AEO/GEO Strategy Development [cite: 8]</li>
-                        <li>• Paid Media Management (Google/Meta) </li>
-                        <li>• Full-stack Landing Page Development [cite: 16]</li>
+                <div class="group bg-white p-8 rounded-2xl shadow-sm border border-slate-200 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                    <span class="text-blue-600 text-xs font-extrabold tracking-wider uppercase mb-2 block">Growth & SEO</span>
+                    <h4 class="text-2xl font-bold mb-3 text-slate-900">Leon Mege Inc.</h4>
+                    <p class="text-slate-600 mb-6 leading-relaxed">Led SEO/AEO initiatives and improved CPA by <strong class="text-slate-900">28%</strong> through technical restructuring and keyword cluster strategies.</p>
+                    <ul class="text-sm space-y-3 mb-8 text-slate-500 font-medium">
+                        <li class="flex items-center gap-2"><svg class="text-blue-500 w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path></svg> AEO/GEO Strategy Development</li>
+                        <li class="flex items-center gap-2"><svg class="text-blue-500 w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path></svg> Paid Media Management (Google/Meta)</li>
+                        <li class="flex items-center gap-2"><svg class="text-blue-500 w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path></svg> Full-stack Landing Page Development</li>
                     </ul>
+                    <a href="#" class="text-blue-600 font-semibold text-sm group-hover:text-blue-800 transition flex items-center gap-1">
+                        View Project Details <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                    </a>
                 </div>
 
-                <div class="bg-white p-8 rounded-2xl shadow-sm border hover:shadow-md transition">
-                    <span class="text-green-600 text-sm font-bold uppercase">OSINT & Data</span>
-                    <h4 class="text-2xl font-bold mt-2 mb-4">Bellingcat Research</h4>
-                    <p class="text-gray-600 mb-6">Conducted in-depth OSINT research, metadata analysis, and data verification to deliver actionable reports[cite: 9, 20].</p>
-                    <ul class="text-sm space-y-2 text-gray-500">
-                        <li>• Advanced Google Dorking </li>
-                        <li>• Public-record & Metadata Research </li>
-                        <li>• Python-based Data Automation </li>
+                <div class="group bg-white p-8 rounded-2xl shadow-sm border border-slate-200 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                    <span class="text-emerald-600 text-xs font-extrabold tracking-wider uppercase mb-2 block">OSINT & Data</span>
+                    <h4 class="text-2xl font-bold mb-3 text-slate-900">Bellingcat Research</h4>
+                    <p class="text-slate-600 mb-6 leading-relaxed">Conducted in-depth OSINT research, metadata analysis, and data verification to deliver actionable intelligence reports.</p>
+                    <ul class="text-sm space-y-3 mb-8 text-slate-500 font-medium">
+                        <li class="flex items-center gap-2"><svg class="text-emerald-500 w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path></svg> Advanced Google Dorking</li>
+                        <li class="flex items-center gap-2"><svg class="text-emerald-500 w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path></svg> Public-record & Metadata Research</li>
+                        <li class="flex items-center gap-2"><svg class="text-emerald-500 w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path></svg> Python-based Data Automation</li>
                     </ul>
+                    <a href="#" class="text-emerald-600 font-semibold text-sm group-hover:text-emerald-800 transition flex items-center gap-1">
+                        View Research Output <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                    </a>
                 </div>
 
             </div>
         </section>
 
-        <section id="skills" class="bg-gray-900 text-white p-10 rounded-3xl">
-            <h3 class="text-2xl font-bold mb-6">The Technical Stack</h3>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-sm">
-                <div>
-                    <h5 class="font-bold text-gray-400 uppercase mb-2">Development</h5>
-                    <p>Python, JavaScript, SQL, HTML/CSS [cite: 10]</p>
-                </div>
-                <div>
-                    <h5 class="font-bold text-gray-400 uppercase mb-2">Marketing</h5>
-                    <p>SEO/AEO, Google Ads, Meta, MailChimp [cite: 8, 11]</p>
-                </div>
-                <div>
-                    <h5 class="font-bold text-gray-400 uppercase mb-2">AI & Research</h5>
-                    <p>Prompting, Google Cloud AI, OSINT [cite: 9, 10]</p>
-                </div>
-                <div>
-                    <h5 class="font-bold text-gray-400 uppercase mb-2">Creative</h5>
-                    <p>Adobe Premiere, Figma, Canva, Runway AI [cite: 11]</p>
+        <section id="skills" class="bg-slate-900 text-white p-12 rounded-[2rem] shadow-2xl overflow-hidden relative">
+            <div class="absolute inset-0 bg-gradient-to-br from-blue-900/20 to-transparent"></div>
+            <div class="relative z-10">
+                <h3 class="text-3xl font-extrabold mb-10 tracking-tight text-white">The Technical Stack</h3>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-sm">
+                    <div>
+                        <h5 class="text-blue-400 font-bold uppercase tracking-widest text-xs mb-3">Development</h5>
+                        <p class="text-slate-300 font-medium leading-loose">Python, JavaScript, SQL, HTML/CSS</p>
+                    </div>
+                    <div>
+                        <h5 class="text-emerald-400 font-bold uppercase tracking-widest text-xs mb-3">Marketing</h5>
+                        <p class="text-slate-300 font-medium leading-loose">SEO/AEO, Google Ads, Meta Ads, MailChimp</p>
+                    </div>
+                    <div>
+                        <h5 class="text-purple-400 font-bold uppercase tracking-widest text-xs mb-3">AI & Research</h5>
+                        <p class="text-slate-300 font-medium leading-loose">Prompt Engineering, Google Cloud AI, OSINT</p>
+                    </div>
+                    <div>
+                        <h5 class="text-rose-400 font-bold uppercase tracking-widest text-xs mb-3">Creative</h5>
+                        <p class="text-slate-300 font-medium leading-loose">Adobe Premiere Pro, Figma, Canva, Runway AI</p>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer class="text-center py-10 text-gray-400 text-sm">
-        &copy; 2026 Dmitrii Musikhin. Built with code and data.
+    <footer class="border-t bg-white py-12">
+        <div class="max-w-5xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center text-slate-500 text-sm">
+            <p>&copy; 2026 Dmitrii Musikhin. Engineered with Precision.</p>
+            <div class="flex space-x-6 mt-4 md:mt-0">
+                <a href="#" class="hover:text-blue-600 font-medium transition">LinkedIn</a>
+                <a href="#" class="hover:text-slate-900 font-medium transition">GitHub</a>
+                <a href="mailto:mitrimus@gmail.com" class="hover:text-blue-600 font-medium transition">mitrimus@gmail.com</a>
+            </div>
+        </div>
     </footer>
 
 </body>
